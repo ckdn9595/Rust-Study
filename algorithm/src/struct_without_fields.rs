@@ -1,5 +1,4 @@
 struct Initialized;
-struct Uninitialized;
 
 struct State {
     state: Option<Initialized>,
