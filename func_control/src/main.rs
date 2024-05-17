@@ -1,7 +1,8 @@
 fn main() {
-    //let x = {let y = 1; y + 1;};
-    //let x = { let y = 1; y + 1 };
-    //println!("{x}");
+    let x = {let y = 1; y};
+    let z = { let y = 1; y + 1 };
+    println!("{x}");
+    println!("{z}");
     let num = 5;
     let day_unit = "월";
     test_void(num, day_unit);
