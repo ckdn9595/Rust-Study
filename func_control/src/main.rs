@@ -43,7 +43,7 @@ fn test_if(num: u32) {
 fn test_loop() -> u32 {
     let mut count = 0;
     loop {
-        //count++; <- 이거 안됨
+        //count++; <- 이거 안됩니다.
         count += 1;
         if count == 10 {
             break count;
@@ -92,11 +92,11 @@ fn test_for() {
         println!("the value is: {element}");
     }
 
-    for number in (1..4) {
-        println!("{number}!");
+    for number in 0..4 {
+        println!("{}!", a[number]);
     }
 
-    for number in (1..4).rev() {
-        println!("{number}!");
+    for number in (0..4).rev() {
+        println!("{}!", a[number]);
     }
 }
