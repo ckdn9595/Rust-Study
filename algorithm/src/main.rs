@@ -1,16 +1,18 @@
 //mod boj_2979;
-//mod struct_without_fields;
+mod boj_1524;
+mod day240923;
+
+use crate::day240923::boj_10984;
 
 fn main() {
-    let mut s = String::from("1");
-    {
-        let mut r1 = &mut s;
-        r1 = String::from("2");
-        println!("{}", r1);
-    }
-    println!("{}", s);
+    // let mut s = String::from("1");
+    // {
+    //     let mut r1 = &mut s;
+    //     r1 = String::from("2");
+    //     println!("{}", r1);
+    // }
+    // println!("{}", s);
 
-   
-    //boj_2979::main();
-    //struct_without_fields::main();
+    boj_10984::main();
+    // struct_without_fields::main();
 }

@@ -23,10 +23,16 @@ trait Action {
 }
 
 struct SayHello;
+struct SayGoodBye;
 
 impl Action for SayHello {
     fn perform(&self) {
         println!("Hello!");
+    }
+}
+impl Action for SayGoodBye {
+    fn perform(&self) {
+        println!("Good Bye!");
     }
 }
 
@@ -41,5 +47,7 @@ pub fn main() {
     println!("Is initialized: {}", machine.is_initialized()); // true
 
     let hello = SayHello;
+    let bye = SayGoodBye;
     greet(&hello);
+    greet(&bye);
 }
